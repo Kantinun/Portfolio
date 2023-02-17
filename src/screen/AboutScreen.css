@@ -1,5 +1,23 @@
-.jump {
-    animation: jump 4s infinite;
+.pic_jump {
+    animation: jump 3.5s infinite;
+}
+.contactme_jump{
+    animation: text_jump 6s infinite;
+}
+
+@keyframes text_jump {
+    0% {
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(10px)
+    }
+    75%{
+        transform: translateY(-10px)
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 @keyframes jump {
