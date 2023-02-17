@@ -1,6 +1,7 @@
 import React from 'react'
 import { colors } from '../config/colors'
 import { Image } from 'antd';
+import './AboutScreen.css'
 import pic from '../assets/myself.jpg'
 
 export default function AboutScreen() {
@@ -18,7 +19,7 @@ export default function AboutScreen() {
             </div>
         </div>
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flex: 1}}>
-            <Image src={pic} alt="my picture" width='50vh' style={{borderRadius: 20}}/>
+            <Image src={pic} alt="my picture" width='50vh' style={{borderRadius: 20}} className="jump" />
         </div>
     </div>
   )

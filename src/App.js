@@ -11,19 +11,20 @@ const { Footer, Content } = Layout;
 function App() {
 
   return (
-    <Layout className="layout" style={{display:'flex', height: '100%', backgroundColor: colors.primary, overflow: false}} >
+    <Layout style={{display:'flex', height: '100%', backgroundColor: colors.primary, overflow: false}} >
       <Content style={{ padding: '0 50px' , backgroundColor: colors.primary}}>
         <Tabs
+        size='large'
         animated
         centered
         items={[
           {
-            label: "About Me",
+            label: <span style={{fontSize: '1.5em', fontWeight: 'bold'}}>About Me</span>,
             key: 1,
             children: <AboutScreen/>,
           },
           {
-            label: "Projects",
+            label: <span style={{fontSize: '1.5em', fontWeight: 'bold'}}>My Projects</span>,
             key: 2,
             children: <MyProjects/>,
           },
