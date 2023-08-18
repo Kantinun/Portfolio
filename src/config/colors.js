@@ -3,3 +3,9 @@ export const colors = {
     grey: '#aaa',
     blue: '#2D82B5',
 }
+export const badgeColor = {
+    FRONTEND_DEVELOPER: 'magenta',
+    BACKEND_DEVELOPER: 'volcano',
+    TA: "gold",
+    SUPPORT: "geekblue"
+}

@@ -12,8 +12,8 @@ const { Footer, Content } = Layout;
 function App() {
 
   return (
-    <Layout style={{display:'flex', height: '100%', backgroundColor: colors.primary, overflow: false}} >
-      <Content style={{ padding: '0 50px' , backgroundColor: colors.primary}}>
+    <Layout className='h-100 w-100' style={{backgroundColor: colors.primary}} >
+      <Content className='h-100 w-100 overflow-y-scroll' style={{ padding: '0 50px' , backgroundColor: colors.primary}}>
         <Tabs
             size='large'
             animated
@@ -25,7 +25,7 @@ function App() {
             tab={
               <span>
                 <UserOutlined />
-                About Me
+                ABOUT ME
               </span>
             }
           >
@@ -36,7 +36,7 @@ function App() {
             tab={
               <span>
                 <ProjectOutlined />
-                My Projects
+                EXPERIENCES
               </span>
             }
           >

@@ -1,34 +1,63 @@
 .pic_jump {
     animation: jump 3.5s infinite;
 }
-.contactme_jump{
+
+.contactme_jump {
     animation: text_jump 6s infinite;
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #33539E 0%,
+            #7FACD6 29%,
+            #BFB8DA 67%,
+            #E8B7D4 79%,
+            #A5678E 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
 }
 
 @keyframes text_jump {
     0% {
         transform: translateY(0);
     }
-    25%{
+
+    25% {
         transform: translateY(10px)
     }
-    75%{
+
+    75% {
         transform: translateY(-10px)
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
 
 @keyframes jump {
-0% {
-    transform: translateY(0);
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
-50% {
-    transform: translateY(-20px);
-}
-100% {
-    transform: translateY(0);
-}
-}
-  

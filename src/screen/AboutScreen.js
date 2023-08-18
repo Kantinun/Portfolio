@@ -1,52 +1,88 @@
-import React from 'react'
-import { colors } from '../config/colors'
-import { Image, Collapse } from 'antd';
-import './AboutScreen.css'
-import pic from '../assets/myself.jpg'
+import React from "react";
+import { colors } from "../config/colors";
+import { Image, Collapse } from "antd";
+import "./AboutScreen.css";
+import pic from "../assets/myself.jpg";
 import {
-    IdcardOutlined,
-    PhoneOutlined,
-    MailOutlined,
-    EnvironmentOutlined,
-    CaretRightOutlined
-  } from '@ant-design/icons';
-  
+  MailOutlined,
+  CaretRightOutlined,
+  ContainerOutlined,
+} from "@ant-design/icons";
 
 const { Panel } = Collapse;
 
 export default function AboutScreen() {
   return (
-    <div style={{backgroundColor: colors.primary, display: 'flex', flexDirection: 'row', padding: '2%'}}>
-        <div style={{display: 'flex',flexDirection: 'column', justifyContent:'center', width: '50%'}}>
-            <div
-                style={{fontSize: '5em', display:'flex'}}
-            >
-                Hi. I'm Kantinun</div>
-            <div
-                style={{fontSize: '1.5em'}}
-            >
-                I'm a new graduate computer engineering student from King Mongkut's University of Technology North Bangkok. I'm currently looking for a software engineer or Frontend developer career.
+    <div
+      className="d-flex flex-column-reverse flex-sm-column-reverse flex-md-row py-5 gap-5 justify-content-center align-items-center"
+      style={{ backgroundColor: colors.primary }}
+    >
+      <div className="d-flex flex-column justify-content-center w-100 w-sm-100 w-md-50">
+        <div className="d-inline" style={{ fontSize: "5em" }}>
+          <span>Hi. I'm </span>
+          <span className="animate-charcter">Kantinun</span>
+        </div>
+        <div style={{ fontSize: "1.5em" }}>
+          I'm Programmer at Senior Com Ltd. since May 2023.I graduate with
+          computer engineering from King Mongkut's University of Technology
+          North Bangkok. I'm currently looking for a software engineer or
+          Frontend developer career :)
+        </div>
+        <Collapse
+          ghost
+          style={{ marginTop: 5 }}
+          expandIcon={({ isActive }) => (
+            <CaretRightOutlined
+              style={{ fontSize: "1.5em", paddingTop: 10 }}
+              rotate={isActive ? 90 : 0}
+            />
+          )}
+        >
+          <Panel
+            header={
+              <div
+                className="contactme_jump"
+                style={{ color: colors.blue, fontSize: "1.5em" }}
+              >
+                Contact Me
+              </div>
+            }
+          >
+            <div className="ms-3 text-nowrap">
+              <div style={{ fontSize: "1.5em" }}>
+                <span>
+                  <MailOutlined
+                    className="mx-3"
+                    style={{ color: colors.blue }}
+                  />
+                </span>
+                kantinun.sirintharawet@gmail.com
+              </div>
+              <div style={{ fontSize: "1.5em" }}>
+                <span>
+                  <ContainerOutlined
+                    className="mx-3"
+                    style={{ color: colors.blue }}
+                  />
+                </span>
+                <a href="#">My CV</a>
+              </div>
+              <div style={{ fontSize: "1.5em" }}>
+                <span>
+                  <ContainerOutlined
+                    className="mx-3"
+                    style={{ color: colors.blue }}
+                  />
+                </span>
+                <a href="#">My Resume</a>
+              </div>
             </div>
-            <Collapse ghost style={{marginTop: 5}}
-                expandIcon={({ isActive }) => <CaretRightOutlined style={{fontSize: '1.5em', paddingTop: 10}} rotate={isActive ? 90 : 0} />}
-            >
-                <Panel header={
-                    <div className="contactme_jump" style={{color: colors.blue, fontSize: '1.5em',}}>Contact Me
-                        <span style={{ marginLeft: 10, fontSize: '1em'}}><IdcardOutlined /></span>
-                    </div>
-                }
-                >
-                    <div style={{marginLeft: 5}}>
-                        <div style={{fontSize: '1.5em'}}><span style={{margin: 5}}><PhoneOutlined style={{color: colors.blue}} /></span>+66 92-768-4876</div>
-                        <div style={{fontSize: '1.5em'}}><span style={{margin: 5}}><MailOutlined style={{color: colors.blue}} /></span>kantinun.sirintharawet@gmail.com</div>
-                        <div style={{fontSize: '1.5em'}}><span style={{margin: 5}}><EnvironmentOutlined style={{color: colors.blue}} /></span>132/16 Room402 Rama6 samsennai phayathai bangkok 10400</div>
-                    </div>
-                </Panel>
-            </Collapse>
-        </div>
-        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flex: 1}}>
-            <Image src={pic} alt="my picture" width='50vh' style={{borderRadius: 20}} className="pic_jump" />
-        </div>
+          </Panel>
+        </Collapse>
+      </div>
+      <div className="d-flex justify-content-center align-items-center w-50">
+        <Image src={pic} alt="my picture" className="pic_jump rounded-circle" />
+      </div>
     </div>
-  )
+  );
 }
