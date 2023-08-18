@@ -65,7 +65,7 @@ export default function AboutScreen() {
                     style={{ color: colors.blue }}
                   />
                 </span>
-                <a href="#">My CV</a>
+                <a href="https://Kantinun.github.io/Portfolio/assets/CV.pdf">My CV</a>
               </div>
               <div style={{ fontSize: "1.5em" }}>
                 <span>
@@ -74,7 +74,7 @@ export default function AboutScreen() {
                     style={{ color: colors.blue }}
                   />
                 </span>
-                <a href="#">My Resume</a>
+                <a href="https://Kantinun.github.io/Portfolio/assets/Resume.pdf">My Resume</a>
               </div>
             </div>
           </Panel>
