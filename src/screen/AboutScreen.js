@@ -3,6 +3,8 @@ import { colors } from "../config/colors";
 import { Image, Collapse } from "antd";
 import "./AboutScreen.css";
 import pic from "../assets/myself.jpg";
+import cvFile from "../assets/CV.pdf"
+import resumerFile from "../assets/Resume.pdf"
 import {
   MailOutlined,
   CaretRightOutlined,
@@ -49,7 +51,7 @@ export default function AboutScreen() {
             }
           >
             <div className="ms-3 text-nowrap">
-              <div style={{ fontSize: "1.5em" }}>
+              <div clas style={{ fontSize: "1.5em" }}>
                 <span>
                   <MailOutlined
                     className="mx-3"
@@ -65,7 +67,7 @@ export default function AboutScreen() {
                     style={{ color: colors.blue }}
                   />
                 </span>
-                <a href="https://Kantinun.github.io/Portfolio/assets/CV.pdf">My CV</a>
+                <a href={cvFile} target="_blank" rel="noreferrer">My CV</a>
               </div>
               <div style={{ fontSize: "1.5em" }}>
                 <span>
@@ -74,7 +76,7 @@ export default function AboutScreen() {
                     style={{ color: colors.blue }}
                   />
                 </span>
-                <a href="https://Kantinun.github.io/Portfolio/assets/Resume.pdf">My Resume</a>
+                <a href={resumerFile} target="_blank" rel="noreferrer">My Resume</a>
               </div>
             </div>
           </Panel>
