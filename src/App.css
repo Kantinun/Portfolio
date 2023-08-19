@@ -42,3 +42,23 @@ html, body, #root {
     transform: rotate(360deg);
   }
 }
+
+.font-handjet {
+  font-family: "HandjetBold";
+  font-size: 2em;
+}
+
+.font-monoton {
+  font-family: "Monoton";
+  font-size: 1em;
+}
+
+.ant-tabs-nav .ant-tabs-tab-active {
+  background-color: "#f4f0fc";
+  border-color: "red";
+  color: '#cba3ff';
+}
+
+.ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: "#f4f0fc"; 
+}

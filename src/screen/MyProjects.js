@@ -195,8 +195,8 @@ export default function MyProjects() {
 
   return (
     <>
-      <div className="text-center pb-3" style={{ fontSize: "4em" }}>
-        MY PROJECTS & EXPERIENCES
+      <div className="text-center pb-3 sign" style={{ fontSize: "4em", color: colors.darkWhite }}>
+        MY <span className="flicker">P</span>ROJECTS & EXPERIE<span className="fast-flicker">N</span>CES
       </div>
       <div
         className="d-flex flex-wrap gap-5 py-3 align-items-start justify-content-center"

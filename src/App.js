@@ -12,13 +12,13 @@ const { Footer, Content } = Layout;
 function App() {
 
   return (
-    <Layout className='h-100 w-100' style={{backgroundColor: colors.primary}} >
+    <Layout className='h-100 w-100' style={{backgroundColor: colors.primary,}} >
       <Content className='h-100 w-100 overflow-y-scroll' style={{ padding: '0 50px' , backgroundColor: colors.primary}}>
         <Tabs
             size='large'
             animated
             centered
-            tabBarStyle={{ fontSize: '1.5em', fontWeight: 'bold' }} // set styles for the tab bar
+            tabBarStyle={{ fontSize: '1.5em', fontWeight: 'bold', color: colors.white }} // set styles for the tab bar
         >
           <Tabs.TabPane
             key='1'

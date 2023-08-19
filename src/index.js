@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
+import './fonts/Handjet/Handjet-VariableFont_ELGR,ELSH,wght.ttf'
+import './fonts/Monoton/Monoton-Regular.ttf'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

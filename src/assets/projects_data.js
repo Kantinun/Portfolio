@@ -11,9 +11,9 @@ export const projects = [
     {
         title: 'Programmer',
         date:"May 2023 - Present",
-        description: 'First job as a developer at Senior com Ltd.',
+        description: 'First job as a programmer at Senior com Ltd.',
         roles: [{title:'Frontend Developer', color: badgeColor.FRONTEND_DEVELOPER},{ title:'Backend Developer',color:badgeColor.BACKEND_DEVELOPER}],
-        job_details: 'Full-time job as developer. Worked as part of a small team of developers.We developed on a Dealer Management system call New Dealer Vision built Frontend with Vue.js and Backend with .NET framework. My main role was a full-stack developer. I implement features in both frontend and backend. The new system more modern as the legacy system. <3 '
+        job_details: 'Full-time job as programmer. Worked as part of a small team of developers.We developed on a Dealer Management system call New Dealer Vision built Frontend with Vue.js and Backend with .NET framework. My main role was a full-stack developer. I implement features in both frontend and backend. The new system more modern as the legacy system. <3 '
     },
     {
         title: 'RTPLMS',

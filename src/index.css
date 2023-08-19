@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "HandjetBold";
+  src: local("Handjet"),
+   url("./fonts/Handjet/Handjet-VariableFont_ELGR,ELSH,wght.ttf") format("truetype");
+  font-weight: bold;
+ }
+ @font-face {
+  font-family: "Monoton";
+  src: local("Monoton"),
+   url("./fonts/Monoton/Monoton-Regular.ttf") format("truetype");
+  font-weight: bold;
+ }
