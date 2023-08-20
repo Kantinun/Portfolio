@@ -5,7 +5,7 @@ import {
   GithubOutlined,
   FileTextOutlined,
 } from "@ant-design/icons";
-import { projects } from "../assets/projects_data";
+import { projects,projectTypeHelper } from "../assets/projects_data";
 import { colors } from "../config/colors";
 import "./MyProjects.css";
 
@@ -35,6 +35,7 @@ export default function MyProjects() {
                         title: (
                           <div style={{ fontSize: "1.5em" }}>
                             {props.project.title ? props.project.title : ""}
+                            <span className="badge ms-2" style={{backgroundColor: projectTypeHelper(props.project.type).color}}>{projectTypeHelper(props.project.type).desc}</span>
                             <span
                               className="d-flex justify-content-between"
                               style={{
@@ -49,7 +50,7 @@ export default function MyProjects() {
                         content: (
                           <div style={{ marginTop: 5 }}>
                             <div
-                              className="d-flex flex-row"
+                              className="d-flex flex-row mb-4"
                               style={{
                                 fontSize: "1.5em",
                                 color: "#555",
@@ -109,6 +110,7 @@ export default function MyProjects() {
                         title: (
                           <div style={{ fontSize: "1.5em" }}>
                             {props.project.title ? props.project.title : ""}
+                            <span className="badge ms-2" style={{backgroundColor: projectTypeHelper(props.project.type).color}}>{projectTypeHelper(props.project.type).desc}</span>
                             <span
                               style={{
                                 color: colors.grey,
@@ -124,6 +126,7 @@ export default function MyProjects() {
                         content: (
                           <div style={{ marginTop: 5 }}>
                             <div
+                            className="mb-4"
                               style={{
                                 fontSize: "1.5em",
                                 color: "#555",
@@ -174,6 +177,7 @@ export default function MyProjects() {
           title={
             <span style={{ fontSize: "1em" }}>
               {props.project.title ? props.project.title : ""}
+              <span className="badge ms-2" style={{backgroundColor: projectTypeHelper(props.project.type).color}}>{projectTypeHelper(props.project.type).desc}</span>
               <span
                 style={{
                   color: colors.grey,

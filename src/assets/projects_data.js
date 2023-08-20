@@ -10,6 +10,7 @@ import {badgeColor} from '../config/colors'
 export const projects = [
     {
         title: 'Programmer',
+        type: 1,
         date:"May 2023 - Present",
         description: 'First job as a programmer at Senior com Ltd.',
         roles: [{title:'Frontend Developer', color: badgeColor.FRONTEND_DEVELOPER},{ title:'Backend Developer',color:badgeColor.BACKEND_DEVELOPER}],
@@ -17,6 +18,7 @@ export const projects = [
     },
     {
         title: 'RTPLMS',
+        type: 2,
         date:"Jul 2022 - Apr 2023",
         description: 'Mobile application for production line monitoring & management in factory',
         roles: [{title:'Frontend Developer', color: badgeColor.FRONTEND_DEVELOPER}],
@@ -25,6 +27,7 @@ export const projects = [
     },
     {
         title: 'IT Supports',
+        type: 3,
         date:"Oct 2022 - Apr 2023",
         roles:[{title:'Support', color: badgeColor.SUPPORT}],
         description: "Part time job at Computer center, Faculty of Engineering of King mongkut's university of technology north bangkok",
@@ -33,6 +36,7 @@ export const projects = [
     },
     {
         title: 'Teacher assistant',
+        type: 3,
         date:"Jul 2022 - Oct 2022",
         roles:[{title:'TA', color:badgeColor.TA}],
         description: "TA in Programming fundamental course at King mongkut's university of technology north bangkok",
@@ -40,6 +44,7 @@ export const projects = [
     },
     {
         title: 'Young Software Developer Project',
+        type: 2,
         date:"2021",
         description: 'Web-application for monitoring & plan management in production line',
         roles:[{title:'Frontend Developer', color:badgeColor.FRONTEND_DEVELOPER},{ title:'Backend Developer',color:badgeColor.BACKEND_DEVELOPER}],
@@ -48,6 +53,7 @@ export const projects = [
     },
     {
         title: 'Oscilloscopes controller',
+        type: 2,
         date: 'Nov 2020' ,
         description: 'Application for control rigol oscilloscope',
         roles:[{title:'Frontend Developer', color:badgeColor.FRONTEND_DEVELOPER},{ title:'Backend Developer',color:badgeColor.BACKEND_DEVELOPER}],
@@ -55,3 +61,24 @@ export const projects = [
         job_details: 'Mini project in signal course to create an application for control Rigol oscilloscopes with PyQt5 library',
     },
 ]
+
+const projectType = [
+    {
+        id: 1,
+        desc: "Full-time",
+        color: "#47CACC"
+    },
+    {
+        id: 2,
+        desc: "Project",
+        color: "#CDB3D4"
+    },
+    {
+        id: 3,
+        desc: "Part-time",
+        color: "#FFBE88"
+    },
+]
+export const projectTypeHelper = (projectTyeId)=>{
+    return projectType.find((row)=>row.id === projectTyeId)
+}

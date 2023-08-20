@@ -30,7 +30,7 @@ export default function AboutScreen() {
           I'm <span className="fast-flicker">Programmer</span> at Senior Com Ltd. since May 2023.I graduate with
           computer engineering from King Mongkut's University of Technology
           North Bangkok. I'm currently looking for a <span className="normal-flicker">software engineer</span> or
-          <span className="flicker">Frontend developer</span> career :)
+          <span className="flicker"> Frontend developer</span> career :)
         </div>
         <Collapse
           ghost
